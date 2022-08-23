@@ -10,7 +10,7 @@ class WebSocketActions(WebSocketEndpoint):
     encoding = 'json'
     actions: typing.List[str] = []
 
-    async def actions_not_allowed(self, websocket: WebSocket, data: typing.Any):
+    async def actions_not_allowed(self, websocket: WebSocket, data: typing.Any) -> None:
         await websocket.send_json({'action': 'Not found'})
 
     async def on_receive(self, websocket: WebSocket, data: typing.Any) -> None:

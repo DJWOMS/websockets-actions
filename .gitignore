@@ -68,7 +68,7 @@ venv.bak/
 
 # mkdocs documentation
 /site
-
+mkdocs.yml
 
 .idea
 idea
