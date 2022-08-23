@@ -23,7 +23,7 @@ class WebSocketManager:
         for connection in self.connections:
             await connection.send_json(message)
 
-    async def broadcast_exclude(self, websocket: typing.List[WebSocket], message: dict) -> None:
+    async def broadcast_exclude(self, websockets: typing.List[WebSocket], message: dict) -> None:
         for connection in self.connections:
-            if connection not in websocket:
+            if connection not in websockets:
                 await connection.send_json(message)
