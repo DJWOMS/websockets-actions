@@ -7,9 +7,11 @@ authors = ["Omelchenko Michael <socanime@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.10"
 starlette = "^0.20.4"
-uvicorn = {extras = ["standart"], version = "^0.18.2"}
+uvicorn = {extras = ["standart"], version = "^0.18.3"}
 
 [tool.poetry.dev-dependencies]
+mkdocs-material = "^8.4.2"
+pytest = "^7.1.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
