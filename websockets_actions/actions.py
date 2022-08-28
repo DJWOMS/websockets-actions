@@ -3,7 +3,7 @@ import typing
 from starlette.endpoints import WebSocketEndpoint
 from starlette.websockets import WebSocket
 
-from manager import WebSocketManager
+from .manager import WebSocketManager
 
 
 class WebSocketActions(WebSocketEndpoint):
