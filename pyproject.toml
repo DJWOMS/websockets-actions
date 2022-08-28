@@ -3,6 +3,8 @@ name = "websockets-actions"
 version = "0.2.2"
 description = "Using Actions for Websockets"
 authors = ["Omelchenko Michael <socanime@gmail.com>"]
+license = "BSD-3-Clause"
+repository = "https://github.com/DJWOMS/websockets-actions"
 
 [tool.poetry.dependencies]
 python = "^3.10"
