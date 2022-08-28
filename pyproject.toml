@@ -1,13 +1,14 @@
 [tool.poetry]
-name = "websocketsactions"
-version = "0.1.0"
-description = ""
+name = "websockets-actions"
+version = "0.2.2"
+description = "Using Actions for Websockets"
 authors = ["Omelchenko Michael <socanime@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 starlette = "^0.20.4"
 uvicorn = {extras = ["standart"], version = "^0.18.3"}
+websockets = "^10.3"
 
 [tool.poetry.dev-dependencies]
 mkdocs-material = "^8.4.2"
