@@ -1,16 +1,36 @@
 [tool.poetry]
 name = "websockets-actions"
-version = "0.2.2"
+version = "0.3.0"
 description = "Using Actions for Websockets"
+readme = "README.md"
 authors = ["Omelchenko Michael <socanime@gmail.com>"]
 license = "BSD-3-Clause"
 repository = "https://github.com/DJWOMS/websockets-actions"
+classifiers = [
+    "Development Status :: Beta",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD-3-Clause",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+]
+
 
 [tool.poetry.dependencies]
 python = "^3.10"
-starlette = "^0.20.4"
-uvicorn = {extras = ["standart"], version = "^0.18.3"}
-websockets = "^10.3"
+
+[project.optional-dependencies]
+starlette = [
+    "starlette>=0.20.4",
+    "uvicorn>=0.18.3",
+    "websockets>=10.3"
+]
+fastapi = [
+    "fastapi>=0.81.0",
+    "uvicorn>=0.18.3",
+    "websockets>=10.3"
+]
+
 
 [tool.poetry.dev-dependencies]
 mkdocs-material = "^8.4.2"
